@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1 align="center">CALCULATOR</h1>
+        <div class="content">
+          <input
+            type="number"
+            placeholder="First operand"
+            class="operand"
+            id="num1"
+          />
+          <select name="operator" class="operator" id="op">
+            <option value="5" class="sign">+(Add)</option>
+            <option value="2" class="sign">- (Subtract)</option>
+            <option value="3" class="sign">*(Multiply)</option>
+            <option value="4" class="sign">/ (divide)</option>
+          </select>
+          <input
+            type="number"
+            placeholder="Second operand"
+            class="operand"
+            id="num2"
+          />
+        </div>
+        <div class="calculate">
+          <button class="btn1" id="btn" onclick="clickEvent">Calculate</button>
+        </div>
+        <div class="result">
+          <label for="result">The result is:</label><br />
+          <input type="number" id="result" class="txtArea" />
+        </div>
+      </div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>
